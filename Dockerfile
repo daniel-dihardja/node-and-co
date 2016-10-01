@@ -38,5 +38,6 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
 RUN npm install -g strongloop
+RUN npm install -g gulp-cli
 
 CMD [ "/bin/bash", "--login" ]
